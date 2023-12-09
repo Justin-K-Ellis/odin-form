@@ -1,0 +1,49 @@
+:root {
+    --grey-background:  #d2d2d2;
+}
+
+* {
+    font-size: 20px;
+}
+
+/* font-family: 'Lora', serif;
+font-family: 'Noto Sans', sans-serif; */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    flex-grow: 1;
+    flex-basis: 33vw;
+    background-image: url("london.jpg");
+    background-size: cover;
+}
+
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--grey-background);
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-right {
+    flex-grow: 1.5;
+    padding: 1em;
+}
+
+.bottom-right {
+    flex-grow: 1;
+    background-color: var(--grey-background);
+}

@@ -1,13 +1,26 @@
 :root {
-    --grey-background:  #d2d2d2;
+    --top-bottom-background:black;
 }
 
 * {
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Lora', serif;
 }
 
-/* font-family: 'Lora', serif;
-font-family: 'Noto Sans', sans-serif; */
+.banner {
+    color: white;
+    background-color: rgba(0, 1, 18, 0.62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    margin-top: 15vh;
+}
+
+.banner p{
+    font-size: 32px;
+}
+
 
 .outer-container {
     display: flex;
@@ -33,17 +46,40 @@ font-family: 'Noto Sans', sans-serif; */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: var(--grey-background);
+    background-color: var(--top-bottom-background);
     justify-content: center;
     align-items: center;
 }
 
 .mid-right {
     flex-grow: 1.5;
-    padding: 1em;
 }
 
 .bottom-right {
     flex-grow: 1;
-    background-color: var(--grey-background);
+    background-color: var(--top-bottom-background);
+}
+
+.top-right,
+.bottom-right {
+    color: white;
+}
+
+.fields-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.field-chunk {
+    margin-bottom: 1vh;
+}
+
+section {
+    padding: 1em;
+}
+
+button {
+    margin-left: 1rem;
 }
